@@ -7,66 +7,12 @@
             margin:0px;
         }
     </style>
-    <script src="phaser.min.js"></script>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/gamepreload.js"></script>
+    <script src="js/gamestart.js"></script>
+    <script src="js/gameover.js"></script>
     <script>
         (function(){
-
-
-
-            var gamePreload = function(game) {}
-
-            gamePreload.prototype = {
-                preload: function(){
-                    this.game.load.image("gameoverImage","gameover-button.png");
-                    this.game.load.image("addscoreImage","addscore-button.png");
-                },
-                create: function(){
-
-                    this.game.state.start("GameStart");
-                }
-            }
-
-            var gameStart = function (game) {
-                score = 0;
-                var scoreText;
-            }
-
-            gameStart.prototype = {
-                create: function(){
-                    score = 0;
-                    var addscoreButton = this.game.add.button(game.world.centerX, game.world.centerY-200, "addscoreImage", this.addScore, this);
-                    addscoreButton.anchor.setTo(0.5,0.5);
-                    var gameoverButton = this.game.add.button(game.world.centerX, game.world.centerY+200, "gameoverImage", this.endGame, this);
-                    gameoverButton.anchor.setTo(0.5,0.5);
-                    scoreText = game.add.text(game.world.centerX, game.world.centerY, "Score: "+score, { font: "50px Arial", fill: "#F0FFFF", align: "center" });
-                    scoreText.anchor.set(0.5);
-                },
-                addScore: function(){
-                    score++;
-                    scoreText.setText("Score: " + score);
-                },
-                endGame: function(){
-                    this.game.state.start("GameOver", true, false, score);
-                }
-            }
-
-            var gameOver = function(game){}
-
-            gameOver.prototype = {
-                init: function(score){
-                    var scoreText = game.add.text(game.world.centerX, game.world.centerY+50, "Your score: "+ score, { font: "50px Arial", fill: "#909090", align: "center" });
-                    scoreText.anchor.set(0.5);
-                },
-
-                create: function(){
-                    var text = game.add.text(game.world.centerX, game.world.centerY, "Game is Over", { font: "65px Arial", fill: "#FFFFFF", align: "center" });
-                    text.anchor.set(0.5);
-                }
-
-
-
-
-            }
 
             var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "game");
 
