@@ -1,0 +1,10 @@
+Building
+Car
+Tree
+Statue
+
+Bus stop?
+People?
+Street shops?
+Power poles?
+...
