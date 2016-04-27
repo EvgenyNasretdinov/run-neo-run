@@ -13,3 +13,4 @@ Local execution
 
 If you want to play this game on your local computer,
 you should run python script "server.py".
+(make sure, you have [Flask](http://flask.pocoo.org/) installed)
