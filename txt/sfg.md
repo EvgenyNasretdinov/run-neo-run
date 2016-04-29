@@ -1,22 +1,16 @@
-Goals of the SFG, including a deadline for realization and the date of completion of the SFG
-----------------------
-
-The project aims at interesting data collection of natural conversations through gamification.
-Why interesting? Why natural? Why gamification?
-
-The main goal of this project is to collect useful data. At least 1000 of interesting dialogues.
-
-(deadline for realization and the date of completion of the SFG?)
-
-
 Specific description of the SFG
 ---------------------
+
+The project aims at interesting data collection of natural conversations through gamification.
+The dialogues are interesting, because they will represent navigation conversations in the real world.
+To achive that goal, the game is designed to place users on fictional world, which is very similar to ours.
+The game-format is choosed to interest more people to participate in this project
+
+Game description:
 
 
 HTML5 navigation game, which will collect user dialogues, to help improve route navigation services.
 
-
-Game description:
 "Run Neo, Run"
 Game is based on popular film series "The Matrix". 
 The game is played by 2 players.
@@ -34,6 +28,24 @@ The current state of the project
 For now, the game has a prototype of the navigator's map...
 
 **Promise of the future**
+
+
+
+Similar prooject was implemented by Maike Paetzel, David Nicolas Racca, David DeVault (University of Southern California,
+Institute for Creative Technologies)
+They implemented several rapid dialogue games, and made some [research](http://www.lrec-conf.org/proceedings/lrec2014/pdf/697_Paper.pdf) on collected data.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
