@@ -22,21 +22,16 @@ The team of two players win, if runner exits the matrix using telephone booth, o
 Communication between navigator and runner is essential to win the game, because runner doesn't know the exit way in a maze which is hard to navigate.
 
 
-The current state of the project
------------------------
+The current state of research 
+-----------------------------
 
-For now, the game has a prototype of the navigator's map...
+
+Similar project was implemented by Maike Paetzel, David Nicolas Racca, David DeVault (University of Southern California,
+Institute for Creative Technologies)
+ Important [research](http://www.lrec-conf.org/proceedings/lrec2014/pdf/697_Paper.pdf) collected data with very similar method which we are proposing in area of several rapid dialogue games.
+
 
 **Promise of the future**
-
-
-
-Similar prooject was implemented by Maike Paetzel, David Nicolas Racca, David DeVault (University of Southern California,
-Institute for Creative Technologies)
-They implemented several rapid dialogue games, and made some [research](http://www.lrec-conf.org/proceedings/lrec2014/pdf/697_Paper.pdf) on collected data.
-
-
-
 
 
 
