@@ -1,6 +1,5 @@
 Specific description of the SFG
 -------------------------------
-
 The project aims at interesting data collection of natural conversations through gamification.
 We will focus on collecting navigational dialogues which can be used in real life navigation.
 Navigation is a challenging task which benefits from interactive conversation. 
@@ -30,7 +29,6 @@ In order to increase attractiveness, we will keep track of best scores based on 
 
 The current state of research 
 -----------------------------
-
 Research on rapid dialogue games by (Paetzel et al., 2014) shown how dialogues from games can provide interesting data for future research in incremental speech processing techniques for spoken dialogue systems.
 They have implemented 2 ("two player") games: RDG-phrase and RDG-image.
 In both games, the first player (receiver) was trying to guess right phrase or image by instructions (descriptions) from the second player (giver).
@@ -45,15 +43,33 @@ GIVE provided results that are consistent with, but more detailed than, ones obt
 By logging how well users were able to follow the system's instructions, they could evaluate the quality of these instructions in terms of task completion rates and times, subjective measures such as helpfulness and friendliness, and runtime performance.
 By identical principle our project will not be only collecting training data but also could be used to evaluate navigational automated dialogue systems.
 
+Goals
+-----
+- Implement a web based game "Run Neo run"
+  - Integrate a gaming platform and interactive chat
+  - Support large number of parallel games
+  - Implement sufficient logging of games for games replaing and evaluation
+  - Implement basic API for replacing players by automated dialogue systems
+- Evaluate the prototype using crowdsourcing platform Crowdflower and collect human-human conversation
+
+Schedule
+--------
+The project will be actively developed in July, August and September 2016.
+
+Funding
+-------
+10 000Kc for 100 paid hours.
+
 Participants
 ------------
-
 Currently, this project presents "Individual Software Project - NPRG045" ( and later - bachelor thesis ) of Evgeny Nasretdinov, with supervisor Mgr. Ondřej Plátek.
 
+Head of Department Approval
+---------------------------
+To appear
 
 References
 ----------
-
 Maike Paetzel, David Nicolas Racca, David DeVault. (2014). University of Southern California, Institute for Creative Technologies. In [A Multimodal Corpus of Rapid Dialogue Games](http://www.lrec-conf.org/proceedings/lrec2014/pdf/697_Paper.pdf).
 
 [Manuvinakurike, Ramesh, and David DeVault. "Pair me up: A web framework for crowd-sourced spoken dialogue collection." Natural Language Dialog Systems and Intelligent Assistants. Springer International Publishing, 2015. 189-201.](http://ict.usc.edu/pubs/Pair%20Me%20Up-%20A%20Web%20Framework%20for%20Crowd-Sourced%20Spoken%20Dialogue%20Collection.pdf)
