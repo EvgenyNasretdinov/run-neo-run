@@ -58,7 +58,7 @@ Maike Paetzel, David Nicolas Racca, David DeVault. (2014). University of Souther
 
 [Manuvinakurike, Ramesh, and David DeVault. "Pair me up: A web framework for crowd-sourced spoken dialogue collection." Natural Language Dialog Systems and Intelligent Assistants. Springer International Publishing, 2015. 189-201.](http://ict.usc.edu/pubs/Pair%20Me%20Up-%20A%20Web%20Framework%20for%20Crowd-Sourced%20Spoken%20Dialogue%20Collection.pdf)
 
-[Paetzel, Maike, Ramesh Manuvinakurike, and David DeVault. "“So, which one is it?” The effect of alternative incremental architectures in a high-performance game-playing agent." 16th Annual Meeting of the Special Interest Group on Discourse and Dialogue. 2015.)(http://www.sigdial.org/workshops/conference16/proceedings/pdf/SIGDIAL10.pdf)
+[Paetzel, Maike, Ramesh Manuvinakurike, and David DeVault. "“So, which one is it?” The effect of alternative incremental architectures in a high-performance game-playing agent." 16th Annual Meeting of the Special Interest Group on Discourse and Dialogue. 2015.](http://www.sigdial.org/workshops/conference16/proceedings/pdf/SIGDIAL10.pdf)
 
 Alexander Koller, Kristina Striegnitz, Donna Byron, Justine Cassell, Robert Dale, Sara Dalzel-Job, Jon Oberlander, Johanna Moore. (2009). In [Validating the web-based evaluation of NLG systems](http://www.coli.uni-saarland.de/~koller/papers/give-acl-09.pdf).
 
