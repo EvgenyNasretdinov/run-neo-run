@@ -48,7 +48,7 @@ Goals
 - Implement a web based game "Run Neo run"
   - Integrate a gaming platform and interactive chat
   - Support large number of parallel games
-  - Implement sufficient logging of games for games replaing and evaluation
+  - Implement sufficient logging of games for games replaying and evaluation
   - Implement basic API for replacing players by automated dialogue systems
 - Evaluate the prototype using crowdsourcing platform Crowdflower and collect human-human conversation
 
@@ -56,26 +56,25 @@ Schedule
 --------
 The project will be actively developed in July, August and September 2016.
 
-Funding
--------
-10 000Kc for 100 paid hours.
+Amount of work
+--------------
+100 - 150 hours.
 
 Participants
 ------------
 Currently, this project presents "Individual Software Project - NPRG045" ( and later - bachelor thesis ) of Evgeny Nasretdinov, with supervisor Mgr. Ondřej Plátek.
 
-Head of Department Approval
----------------------------
-To appear
-
 References
 ----------
-Maike Paetzel, David Nicolas Racca, David DeVault. (2014). University of Southern California, Institute for Creative Technologies. In [A Multimodal Corpus of Rapid Dialogue Games](http://www.lrec-conf.org/proceedings/lrec2014/pdf/697_Paper.pdf).
+Maike Paetzel, David Nicolas Racca, David DeVault. (2014). University of Southern California, Institute for Creative Technologies. [A Multimodal Corpus of Rapid Dialogue Games](http://www.lrec-conf.org/proceedings/lrec2014/pdf/697_Paper.pdf).
 
-[Manuvinakurike, Ramesh, and David DeVault. "Pair me up: A web framework for crowd-sourced spoken dialogue collection." Natural Language Dialog Systems and Intelligent Assistants. Springer International Publishing, 2015. 189-201.](http://ict.usc.edu/pubs/Pair%20Me%20Up-%20A%20Web%20Framework%20for%20Crowd-Sourced%20Spoken%20Dialogue%20Collection.pdf)
+Manuvinakurike, Ramesh, and David DeVault. [Pair me up: A web framework for crowd-sourced spoken dialogue collection." Natural Language Dialog Systems and Intelligent Assistants.](http://ict.usc.edu/pubs/Pair%20Me%20Up-%20A%20Web%20Framework%20for%20Crowd-Sourced%20Spoken%20Dialogue%20Collection.pdf) Springer International Publishing, 2015. 189-201.
 
-[Paetzel, Maike, Ramesh Manuvinakurike, and David DeVault. "“So, which one is it?” The effect of alternative incremental architectures in a high-performance game-playing agent." 16th Annual Meeting of the Special Interest Group on Discourse and Dialogue. 2015.](http://www.sigdial.org/workshops/conference16/proceedings/pdf/SIGDIAL10.pdf)
+Paetzel, Maike, Ramesh Manuvinakurike, and David DeVault. [“So, which one is it?” The effect of alternative incremental architectures in a high-performance game-playing agent.](http://www.sigdial.org/workshops/conference16/proceedings/pdf/SIGDIAL10.pdf) 16th Annual Meeting of the Special Interest Group on Discourse and Dialogue. 2015.
 
-Alexander Koller, Kristina Striegnitz, Donna Byron, Justine Cassell, Robert Dale, Sara Dalzel-Job, Jon Oberlander, Johanna Moore. (2009). In [Validating the web-based evaluation of NLG systems](http://www.coli.uni-saarland.de/~koller/papers/give-acl-09.pdf).
+Alexander Koller, Kristina Striegnitz, Donna Byron, Justine Cassell, Robert Dale, Sara Dalzel-Job, Jon Oberlander, Johanna Moore. (2009). [Validating the web-based evaluation of NLG systems](http://www.coli.uni-saarland.de/~koller/papers/give-acl-09.pdf).
 
-Srinivasan Janarthanam, Oliver Lemon, Phil Bartie, Tiphaine Dalmas, Anna Dickinson, Xingkun Liu, William Mackaness, and Bonnie Webber. (2013). In [Evaluating a City Exploration Dialogue System Combining Question-Answering and Pedestrian Navigation](http://spacebook-project.eu/pubs/ACL-13-2.pdf).
+Srinivasan Janarthanam, Oliver Lemon, Phil Bartie, Tiphaine Dalmas, Anna Dickinson, Xingkun Liu, William Mackaness, and Bonnie Webber. (2013). [Evaluating a City Exploration Dialogue System Combining Question-Answering and Pedestrian Navigation](http://spacebook-project.eu/pubs/ACL-13-2.pdf).
+
+Head of Department Approval
+---------------------------
