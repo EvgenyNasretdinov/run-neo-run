@@ -1,3 +1,6 @@
+Student Faculty Grant (SFG) proposal
+====================================
+
 Specific description of the SFG
 -------------------------------
 The project aims at interesting data collection of natural conversations through gamification.
