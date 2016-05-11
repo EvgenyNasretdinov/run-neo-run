@@ -15,11 +15,10 @@ The success of data collection depends on popularity of the game which we plan t
 Game description:
 
 
-HTML5 navigation game, which will collect user dialogues, to help improve route navigation services.
+"Run Neo, Run" is a HTML5 navigation game, which will collect user conversations, to build and evaluate route navigation services.
 
-"Run Neo, Run"
-Game is based on popular film series "The Matrix". 
-The game is played by 2 players.
+The game is based on popular film series "The Matrix". 
+The game is played by two players.
 One of them takes role of the runner, who escapes from agents. He also has a limited view of the map. 
 The second player as a navigator sees the whole map and shows the runner a way how to escape. 
 
