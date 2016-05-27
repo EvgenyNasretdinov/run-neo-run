@@ -27,6 +27,7 @@
         })();
         $(document).ready(function(){
             namespace = '/game';
+            currentRoom = '';
 
             var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
 
@@ -35,8 +36,14 @@
                 $('#log').append('<br>' + $('<div/>').text('Received #' + msg.count + ': ' + msg.data).html());
             });
 
+
+            socket.on('set room', function(msg) {
+                currentRoom = msg['room'];
+            })
+
             $('form#emit').submit(function(event) {
-                socket.emit('my event', {data: $('#emit_data').val()});
+                socket.emit('my event', {room: currentRoom,
+                    data: $('#emit_data').val()});
                 return false;
             });
         });

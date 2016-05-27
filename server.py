@@ -39,6 +39,10 @@ app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, async_mode=async_mode)
 
 
+current_room = None
+room_count = 0
+
+
 @app.route('/')
 def render_main_html():
     return render_template("index.html")
@@ -47,7 +51,23 @@ def render_main_html():
 def test_message(message):
     session['receive_count'] = session.get('receive_count', 0) + 1
     emit('my response',
-         {'data': message['data'], 'count': session['receive_count']}, broadcast=True)
+         {'data': message['data'], 'count': session['receive_count']}, room=message['room'])
+
+
+@socketio.on('connect', namespace='/game')
+def join():
+    global current_room
+    global room_count
+    if current_room:
+        emit('set room', {'room': current_room})
+        join_room(current_room)
+        current_room = None
+    else:
+        room_count += 1
+        current_room = room_count
+        emit('set room',{'room': current_room})
+        join_room(current_room)
+
 
 
 if __name__ == '__main__':
