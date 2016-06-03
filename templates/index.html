@@ -28,18 +28,36 @@
         $(document).ready(function(){
             namespace = '/game';
             currentRoom = '';
+            positionTest = 1337;
+            var runner;
 
             var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
 
+            socket.on('set room', function(msg) {
+                currentRoom = msg['room'];
+                runner = msg['runner'];
+                // $('#role').append('<br>' + $('<div/>').text((runner)?"Runner":"Navigator").html());
+            })
+
+            $('#positionTest').click(function(){
+                if ((typeof runner !== 'undefined') && (runner)){
+                    positionTest = Math.random();
+                    $('#positionTest').text(positionTest);
+                    socket.emit('send_position',{position: positionTest, room: currentRoom});
+                }
+            })
+
+            socket.on('get_position', function(msg) {
+                if (!runner){
+                    positionTest = msg['position'];
+                    $('#positionTest').text(positionTest);
+                }
+            })
 
             socket.on('my response', function(msg) {
                 $('#log').append('<br>' + $('<div/>').text('Received #' + msg.count + ': ' + msg.data).html());
             });
 
-
-            socket.on('set room', function(msg) {
-                currentRoom = msg['room'];
-            })
 
             $('form#emit').submit(function(event) {
                 socket.emit('my event', {room: currentRoom,
@@ -51,7 +69,8 @@
     </script>
 </head>
 <body>
-    <div style="position:absolute; left:20px; top:20px; width:300px;">
+    <button id="positionTest" style="position:absolute; left:20px; top:20px;">position test</button>
+    <div style="position:absolute; left:20px; top:40px; width:300px;">
     <form id="emit" method="POST" action='#'>
         <input type="text" name="emit_data" id="emit_data" placeholder="Message">
         <input type="submit" value="Send">
@@ -60,5 +79,6 @@
     </div>
 
     <div id="game" style="position:absolute;left:300px;"></div>
+    <!-- <div id="role"></div> -->
 </body>
 </html>
