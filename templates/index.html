@@ -15,16 +15,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
     <script>
-        (function(){
-            var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "game");
-
-            game.state.add("GamePreload", gamePreload);
-            game.state.add("GameStart", gameStart);
-            game.state.add("GameOver", gameOver);
-
-            game.state.start("GamePreload");
-
-        })();
         $(document).ready(function(){
             namespace = '/game';
             currentRoom = '';
@@ -47,12 +37,12 @@
                 }
             })
 
-            socket.on('get_position', function(msg) {
-                if (!runner){
-                    positionTest = msg['position'];
-                    $('#positionTest').text(positionTest);
-                }
-            })
+            // socket.on('get_position', function(msg) {
+            //     if (!runner){
+            //         positionTest = msg['position'];
+            //         $('#positionTest').text(positionTest);
+            //     }
+            // })
 
             socket.on('my response', function(msg) {
                 $('#log').append('<br>' + $('<div/>').text('Received #' + msg.count + ': ' + msg.data).html());
@@ -64,6 +54,25 @@
                     data: $('#emit_data').val()});
                 return false;
             });
+            (function(){
+                var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, "game");
+
+                game.state.add("GamePreload", gamePreload);
+                game.state.add("GameStart", gameStart);
+                game.state.add("GameOver", gameOver);
+
+                game.state.start("GamePreload", true, false, socket, currentRoom);
+
+                socket.on('get_position', function(msg) {
+                    if (!runner){
+                       asd =  parseInt(game.state.states["GameStart"].positionXTest) + 50;
+                        game.state.states["GameStart"].positionXTest = asd;
+
+                        positionTest = msg['position'];
+                        $('#positionTest').text(positionTest);
+                    }
+                })
+            })();
         });
 
     </script>
